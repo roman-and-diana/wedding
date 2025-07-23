@@ -503,6 +503,10 @@ footer {
 /* === RESPONSIVE DESIGN === */
 
 @media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll;
+    background-position: center top;
+  }
   .hero-content h1 { font-size: clamp(2.5rem, 12vw, 4rem); }
   .main-container { margin-top: -120px; }
   .card { padding: 30px; }

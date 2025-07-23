@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman & Diana's Wedding</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet">
+</head>
+<body>
+
+<header class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Roman & Diana</h1>
+    <p class="subtitle">ОДРУЖУЮТЬСЯ</p>
+    <p class="date">СЕРПЕНЬ 16, 2025</p>
+    <div id="countdown" class="countdown">
+      <div class="countdown-item"><span id="days">0</span>
+        <div>Днів</div>
+      </div>
+      <div class="countdown-item"><span id="hours">0</span>
+        <div>Годин</div>
+      </div>
+      <div class="countdown-item"><span id="minutes">0</span>
+        <div>Хвилин</div>
+      </div>
+      <div class="countdown-item"><span id="seconds">0</span>
+        <div>Секунд</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+
+  <section class="card intro-card">
+    <h3>Це більше, ніж просто подія — це початок</h3>
+    <p>Ми закохані, щасливі й готові почати спільне життя. І ми не уявляємо цього дня без вас.
+      Приходьте святкувати нашу любов, сміятись, танцювати й творити незабутні миті разом!</p>
+  </section>
+
+  <!--  <section class="card story-card">-->
+  <!--    <h3>Our Story</h3>-->
+  <!--    <p>Our journey began on a crisp autumn evening in the heart of Kraków's Main Square. A chance-->
+  <!--      meeting over coffee sparked a connection that grew with every shared smile and late-night-->
+  <!--      conversation. From wandering through the historic streets of Kazimierz to dreaming of our-->
+  <!--      future together, our love story has been our greatest adventure.</p>-->
+  <!--    <p>Now, we're thrilled to be taking the next step and can't wait to celebrate the beginning of-->
+  <!--      our forever with you.</p>-->
+  <!--  </section>-->
+
+  <div class="photo-gallery">
+    <div class="gallery-track">
+      <img src="images/photo1.jpg" alt="Photo 1"><img src="images/photo2.jpg" alt="Photo 2"><img
+        src="images/photo3.jpg" alt="Photo 3"><img src="images/photo4.jpg" alt="Photo 4"><img
+        src="images/photo5.jpg" alt="Photo 5"><img src="images/photo6.jpg" alt="Photo 6">
+      <img src="images/photo1.jpg" alt="Photo 1"><img src="images/photo2.jpg" alt="Photo 2"><img
+        src="images/photo3.jpg" alt="Photo 3"><img src="images/photo4.jpg" alt="Photo 4"><img
+        src="images/photo5.jpg" alt="Photo 5"><img src="images/photo6.jpg" alt="Photo 6">
+    </div>
+  </div>
+
+  <section class="card schedule-card-timeline">
+    <h3>Весільний розклад дня</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round">
+            <path
+                d="M11.3 22H5.5a2 2 0 0 1-2-2.3c.2-1.2.6-2.3 1.2-3.4C5.7 15 6 14.1 6 13.2V3h12v10.2c0 .9.3 1.8.8 2.6 1 1.6 2 3.5 2.2 5.2a2 2 0 0 1-2 2.3h-5.7"/>
+            <path d="M6 13h12"/>
+            <path d="M12 3v10"/>
+            <path d="m15 22-3-3-3 3"/>
+          </svg>
+        </div>
+        <div class="timeline-content">
+          <div class="time">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>12:30</span>
+          </div>
+          <h4 class="title">Зустріч біля собору</h4>
+          <p class="location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Собор святого Юра</span>
+          </p>
+          <p class="description">Просимо вас прибути трішки завчасно, щоб разом очікувати на початок
+            церемонії та розділити з нами перші хвилюючі миті.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round">
+            <path d="M16.5 6.5a4.5 4.5 0 1 0-6.4 6.4L10.2 13"/>
+            <path d="m13.4 10.6 6.4-6.4a4.5 4.5 0 1 0-6.4-6.4l-6.3 6.4"/>
+            <path d="M12.5 12.5a4.5 4.5 0 1 0-6.4 6.4L6.2 19"/>
+            <path d="m19.4 13.6-6.4-6.4a4.5 4.5 0 1 0-6.4-6.4l-6.3 6.4"/>
+          </svg>
+        </div>
+        <div class="timeline-content">
+          <div class="time">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>12:40</span>
+          </div>
+          <h4 class="title">
+            Таїнство шлюбу</h4>
+          <p class="location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Собор святого Юра</span>
+          </p>
+          <p class="description">Запрошуємо вас розділити з нами цей святий момент у величному
+            храмі, де ми скажемо одне одному “ТАК” перед Богом і найріднішими.</p>
+
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round">
+            <path d="M12 22a10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8H2a10 10 0 0 0 10 10Z"/>
+            <path d="M12 2v10"/>
+            <path d="m16 2-4 4-4-4"/>
+          </svg>
+        </div>
+        <div class="timeline-content">
+          <div class="time">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>14:30</span>
+          </div>
+          <h4 class="title">
+            Збір гостей у ресторані</h4>
+          <p class="location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Ресторан "Рафаель"</span>
+          </p>
+          <p class="description">Після церемонії будемо раді бачити вас у святковій атмосфері — з
+            келихом шампанського та передчуттям прекрасного вечора.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+          </svg>
+        </div>
+        <div class="timeline-content">
+          <div class="time">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>15:00</span>
+          </div>
+          <h4 class="title">
+            Святкування весілля</h4>
+          <p class="location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Ресторан "Рафаель"</span>
+          </p>
+          <p class="description">Запрошуємо вас на святкову вечерю, танці, обійми та незабутні миті
+            разом із нами.</p></div>
+      </div>
+      <!--      <div class="timeline-item">-->
+      <!--        <div class="timeline-icon">-->
+      <!--          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"-->
+      <!--               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"-->
+      <!--               stroke-linejoin="round">-->
+      <!--            <path d="M9 18V5l12-2v13"/>-->
+      <!--            <circle cx="6" cy="18" r="3"/>-->
+      <!--            <circle cx="18" cy="16" r="3"/>-->
+      <!--          </svg>-->
+      <!--        </div>-->
+      <!--        <div class="timeline-content"><span class="time">🕰️ 17:30</span><h4 class="title">Let's-->
+      <!--          Party!</h4>-->
+      <!--          <p class="description">Join us on the dance floor.</p></div>-->
+      <!--      </div>-->
+    </div>
+  </section>
+
+    <section class="card story-card">
+      <h3>Меню</h3>
+      <p>
+        - Краби <p>
+        - Фуа-гра<p>
+        - М'ясо страуса<p>
+        - Крокодил запечений з овочами<p>
+        - Бібімбап<p>
+      </p>
+    </section>
+
+  <section class="card additional-info-card">
+
+    <div class="map-grid-container">
+      <div class="card map-card">
+        <h3>Таїнство шлюбу</h3>
+        <div class="map-container">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.205407010457!2d24.01074447710608!3d49.83859787148183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add77635329f9%3A0x49aa812d78ffd1cc!2sSt.%20George&#39;s%20Cathedral!5e0!3m2!1sen!2spl!4v1753284740275!5m2!1sen!2spl"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-description"><p><strong>Архикатедральний Собор Святого Юра</strong><br>площа
+          Святого Юра, 5, Львів, Львівська область, Україна</p></div>
+      </div>
+      <div class="card map-card">
+        <h3>Ресторан</h3>
+        <div class="map-container">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.0463990576363!2d24.05542837710263!3d49.766384171469575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae8f105e700ef%3A0x81fde5d1d2e87b00!2sRafael!5e0!3m2!1sen!2spl!4v1753291152633!5m2!1sen!2spl"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-description"><p><strong>Ресторан "Рафаель"</strong><br>вул. Івана Гонти, 1а,
+          село Зубра, Львівська область, Україна</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card additional-info-card">
+    <h3>Додаткова інформація</h3>
+    <h4>Дрес-код</h4>
+    <p>Для нас найцінніше — це ваша присутність у цей особливий день 💛
+    <p>Але будемо щиро раді, якщо ви підтримаєте атмосферу свята й оберете вбрання у світлих, ніжних
+      тонах.
+    <p>🌿 Просимо уникати надто яскравих кольорів — натомість надайте перевагу пастельним, кремовим,
+      пудровим, ніжно-блакитним, персиковим та іншим світлим відтінкам, які створять гармонійний
+      настрій нашого дня.
+    <p>Дякуємо за розуміння й турботу — нам надзвичайно приємно 💫</p>
+    <div class="dress-code-palette">
+      <div class="palette-item">
+        <div class="color-swatch"></div>
+        <span class="color-name">Rose Tan</span>
+      </div>
+      <div class="palette-item">
+        <div class="color-swatch"></div>
+        <span class="color-name">Pear Sorbet</span>
+      </div>
+      <div class="palette-item">
+        <div class="color-swatch"></div>
+        <span class="color-name">Buttercream</span>
+      </div>
+      <div class="palette-item">
+        <div class="color-swatch"></div>
+        <span class="color-name">Gleam</span>
+      </div>
+      <div class="palette-item">
+        <div class="color-swatch"></div>
+        <span class="color-name">Pastel Blue</span>
+      </div>
+    </div>
+
+    <h4>Подарунки</h4>
+    <p>Якщо ви планували потішити нас букетом, маємо маленьке прохання:
+      Ми не встигнемо насолодитися красою квітів, адже одразу після весілля вирушаємо у весільну
+      подорож.
+      Натомість будемо щиро раді пляшечці вашого улюбленого вина або книжці, яку ви рекомендуєте
+      прочитати.
+    </p>
+
+    <h4>Дитячий аніматор</h4>
+    <p>Під час весільної вечірки для наших маленьких гостей працюватиме дитячий аніматор. Ми подбали
+      про розваги, щоб діти весело провели час, а батьки могли насолоджуватись святом без
+      турбот.</p>
+
+
+  </section>
+
+  <section class="card additional-info-card">
+    <h3>Звʼязок з нареченими</h3>
+    <div class="contact-grid">
+      <div class="contact-person">
+        <img src="images/roman.jpg" alt="Роман">
+        <h5>Роман</h5><span class="role">Наречений</span>
+        <div class="contact-details">
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:[+380 96 16 50 321]">[+380 96 16 50 321]</a>
+          </p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:[rom.pasichnyk@gmail.com]">[rom.pasichnyk@gmail.com]</a>
+          </p>
+        </div>
+      </div>
+      <div class="contact-person">
+        <img src="images/diana.jpg" alt="Діана">
+        <h5>Діана</h5><span class="role">Наречена</span>
+        <div class="contact-details">
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:[+380 98 03 68 200]">[+380 98 03 68 200]</a>
+          </p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:[tsiolkovskadiana@gmail.com]">[tsiolkovskadiana@gmail.com]</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+<footer>
+  <p>Roman & Diana</p>
+</footer>
+
+<script>
+  // --- Countdown Timer Logic ---
+  const weddingDate = new Date("August 16, 2025 12:40:00").getTime();
+  const countdownFunction = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+    if (distance < 0) {
+      clearInterval(countdownFunction);
+      document.getElementById("countdown").innerHTML = "<h2>Великий день настав!</h2>";
+      return;
+    }
+    document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById("hours").innerText = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById("minutes").innerText = Math.floor(
+        (distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+  }, 1000);
+</script>
+
+</body>
+</html>

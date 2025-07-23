@@ -181,22 +181,25 @@ footer {
   border-radius: 4px;
 }
 
-/* === CENTERED SPLIT TIMELINE === */
+/* =================================================================== */
+/* ==== ФІНАЛЬНИЙ, ЕЛЕГАНТНИЙ CSS ДЛЯ ТАЙМЛАЙНУ (КОПІЮЙТЕ ЦЕ) ==== */
+/* =================================================================== */
 
+/* 1. БАЗОВІ СТИЛІ (ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ)
+   Елегантний "підвішений" таймлайн.
+*/
 .timeline {
   position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 900px;
   padding: 20px 0;
+  margin: 0;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
+  left: 0; /* Лінія тепер з самого краю контенту */
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   height: 100%;
   width: 2px;
   background: #EAE0D5;
@@ -205,18 +208,21 @@ footer {
 .timeline-item {
   position: relative;
   margin-bottom: 30px;
+  padding-left: 25px; /* Створюємо відступ для тексту від лінії */
 }
-.timeline-item:last-child { margin-bottom: 0; }
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
 
 .timeline-icon {
   position: absolute;
-  left: 50%;
+  /* ОСНОВНА ЗМІНА: "вішаємо" іконку на лінію */
+  left: -21px; /* Половина ширини іконки (42px / 2) */
   top: 0;
-  transform: translateX(-50%);
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background-color: var(--color-light);
+  background-color: var(--color-light); /* Колір картки, щоб перекривати лінію */
   border: 2px solid #EAE0D5;
   z-index: 2;
   display: flex;
@@ -232,25 +238,13 @@ footer {
 }
 
 .timeline-content {
-  position: relative;
-  width: calc(50% - 40px);
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-  left: calc(50% + 40px);
-  padding-left: 20px;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-  left: 0;
-  text-align: right;
-  padding-right: 20px;
+  padding-top: 5px;
 }
 
 .timeline-content .time {
   display: flex;
   align-items: center;
-  gap: 8px; /* Відстань між іконкою і часом */
+  gap: 8px;
   font-family: var(--font-body);
   font-weight: 500;
   color: var(--color-primary);
@@ -265,10 +259,6 @@ footer {
   stroke-width: 2px;
 }
 
-.timeline-item:nth-child(even) .timeline-content .time {
-  justify-content: flex-end;
-}
-
 .timeline-content .title {
   font-family: var(--font-headings);
   font-size: 1.5rem;
@@ -277,10 +267,72 @@ footer {
   margin: 0 0 5px 0;
 }
 
+.timeline-content .location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.timeline-content .location svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--color-primary);
+  stroke-width: 2px;
+  flex-shrink: 0;
+}
+
 .timeline-content .description {
   font-size: 0.95rem;
   color: #777;
   margin: 0;
+}
+
+/* 2. СТИЛІ ДЛЯ ВЕЛИКИХ ЕКРАНІВ (ДЕСКТОП)
+   Повертаємо красивий центрований вигляд.
+*/
+@media screen and (min-width: 769px) {
+  .timeline {
+    padding-left: 0;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    padding-left: 0; /* Скидаємо мобільний відступ */
+  }
+
+  .timeline-icon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-content {
+    width: calc(50% - 40px);
+    position: relative;
+    padding-top: 0;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: calc(50% + 40px);
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 0;
+    text-align: right;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content .time,
+  .timeline-item:nth-child(even) .timeline-content .location {
+    justify-content: flex-end;
+  }
 }
 
 /* === MAPS === */
@@ -477,30 +529,4 @@ footer {
     left: auto;
     text-align: left;
   }
-}
-
-/* ---
-   СТИЛІ ДЛЯ ЛОКАЦІЇ В РОЗКЛАДІ
---- */
-
-.timeline-content .location {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* Відстань між іконкою і текстом */
-  margin: 8px 0; /* Вертикальні відступи */
-  font-weight: 500;
-  color: var(--color-dark);
-}
-
-.timeline-content .location svg {
-  width: 16px;
-  height: 16px;
-  stroke: var(--color-primary); /* Колір іконки відповідає темі сайту */
-  stroke-width: 2px;
-  flex-shrink: 0; /* Запобігає стисканню іконки */
-}
-
-/* Правильне вирівнювання для елементів зліва */
-.timeline-item:nth-child(even) .timeline-content .location {
-  justify-content: flex-end; /* Вирівнює по правому краю */
 }

@@ -394,8 +394,8 @@ footer {
 .palette-item { text-align: center; }
 
 .color-swatch {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin: 0 auto 10px auto;
   border: 3px solid white;
@@ -532,5 +532,93 @@ footer {
   .timeline-item:nth-child(odd) .timeline-content {
     left: auto;
     text-align: left;
+  }
+}
+
+/* Стилі для персонального привітання */
+.guest-greeting-title {
+  font-family: var(--font-headings);
+  font-weight: 600;
+  font-size: 2.2rem; /* Трохи менше за основний заголовок */
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  margin-top: -10px; /* Трохи піднімаємо, щоб було гарно */
+}
+
+
+/* --- СТИЛІ ДЛЯ ПРИВАТНОСТІ ТА БЛОКУВАННЯ --- */
+
+/* За замовчуванням ховаємо основний контент сайту */
+#website-content {
+  visibility: hidden;
+}
+
+/* Стиль для оверлею-заглушки */
+.access-denied-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
+  z-index: 100;
+  display: none; /* За замовчуванням прихований */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.access-denied-overlay .message-box {
+  max-width: 450px;
+}
+
+.access-denied-overlay .icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.access-denied-overlay h2 {
+  font-family: var(--font-headings);
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.access-denied-overlay p {
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+/* ---
+   СТИЛІ ДЛЯ НОВОГО ДВОКОЛОНКОВОГО ДРЕС-КОДУ
+--- */
+
+.dress-code-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* Створює 2 колонки, текстова трохи ширша */
+  gap: 30px; /* Відстань між колонками */
+  align-items: start; /* Вирівнює верхні краї колонок */
+  margin-top: 20px;
+}
+
+.dress-code-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Закруглені кути для фото */
+}
+
+/* Оновлення для палітри, щоб вона вирівнювалась по лівому краю в колонці */
+.dress-code-palette {
+  justify-content: flex-start; /* Вирівнювання по початку */
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+
+/* --- Адаптивність для мобільних телефонів --- */
+@media (max-width: 768px) {
+  .dress-code-container {
+    grid-template-columns: 1fr; /* На мобільних буде одна колонка */
   }
 }

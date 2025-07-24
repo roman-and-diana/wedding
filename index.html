@@ -329,15 +329,15 @@
           <img src="images/diana.jpg" alt="Діана">
           <h5>Діана</h5><span class="role">Наречена</span>
           <div class="contact-details">
-                        <p>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                               stroke-linejoin="round">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                          </svg>
-                          <a href="tel:[+380 98 03 68 200]">[+380 98 03 68 200]</a>
-                        </p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:[+380 98 03 68 200]">[+380 98 03 68 200]</a>
+            </p>
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -370,74 +370,29 @@
 
 <script>
   try {
-    // --- СПИСОК ГОСТЕЙ ---
-    const guestList = {
-      // Нареченого
-      'hqurip3f': {greeting: 'Дорогі', names: 'тато Володимир та мама Люба'},
-      '3qyg7sr0': {greeting: 'Дорогі', names: 'Володимир та Марія, Данилко, Оксанка та Софійка'},
-      'azucuau0': {greeting: 'Дорогі', names: 'Ігор та Христина, Олежик та Даринка'},
-      '9yrkzp2d': {greeting: 'Дорогі', names: 'Тарас та Ярина'},
-      '0smrp81j': {greeting: 'Дорогі', names: 'Олексій та Наталя'},
-      '133fk9n0': {greeting: 'Дорогі', names: 'дружби Ігор та Наталя'},
-      'stfxmq13': {greeting: 'Дорогий', names: 'Остап'},
-      '89tds9ju': {greeting: 'Дорогий', names: 'Данило'},
-      'ppqzu0c7': {greeting: 'Дорогі', names: 'Юрій та Тетяна, Артем та Михайло'},
-      'aapj3ybm': {greeting: 'Дорогі', names: 'хресний Михайло та тітка Оксана'},
-      'ya0chw2g': {greeting: 'Дорогі', names: 'Вікторія, Діанка та Демʼянко'},
-      'g2n3y7es': {greeting: 'Дорогі', names: 'Тетяна, Ігор та Давидик'},
-      'wcoz0k32': {greeting: 'Дорогі', names: 'Ігор та Вікторія'},
-      '3es8xq65': {greeting: 'Дорогий', names: 'дружба - Богдан'},
-      'crewwyo0': {greeting: 'Дорогі', names: 'Володимир та Зоряна, Софія та Марко'},
-      '0b3gyp7p': {greeting: 'Дорогі', names: 'тітка Ганя, дядько Олег та Маркіян'},
-      '5mew46zp': {greeting: 'Дорогі', names: 'тітка Оля, дядько Іван та Віталік'},
-      'ty3thmn9': {greeting: 'Дорога', names: 'Василина'},
-      'pebyuph3': {greeting: 'Дорога', names: 'Юля'},
 
-      // Нареченої
-      'ppclxr9x': {greeting: 'Дорогі', names: 'мама Галина та тато Ігор'},
-      'h7rcvjer': {greeting: 'Дорога', names: 'бабусю Маріє'},
-      'tl1btm2d': {greeting: 'Дорога', names: 'Софійка'},
-      'edcqowvv': {greeting: 'Дорогі', names: 'Віталік, Соломійка та Левчик'},
-      'snj4x61e': {greeting: 'Дорогі', names: 'Галина, Юрій, Аліна та Павлик'},
-      '26zslwtm': {greeting: 'Дорогі', names: 'Олег та Галя'},
-      'yx5m6zi9': {greeting: 'Дорога', names: 'дружка - Діанка'},
-      '6x65wbkz': {greeting: 'Дорога', names: 'Анастасія'},
-      'g789g672': {greeting: 'Дорогі', names: 'хресна Олеся та Софійка'},
-      'vs4yt1w3': {greeting: 'Дорогий', names: 'Олександр'},
-      'q73sofx2': {greeting: 'Дорогі', names: 'Іванка, Тарас та Оксанка'},
-      'qf2oyxas': {greeting: 'Дорогі', names: 'Святослав та Юля'},
-      'bttk6pis': {greeting: 'Дорогий', names: 'Віктор'},
-      'ewgemm7d': {greeting: 'Дорогий', names: 'Роман'},
-      'bblylmp4': {greeting: 'Дорогий', names: 'Максим'},
-      '9dvohks7': {greeting: 'Дорогі', names: 'Христя, Анастасійка та Вікуся'},
-      'l381blo4': {greeting: 'Дорога', names: 'Христина'},
-      'jin9x6ub': {greeting: 'Дорогі', names: 'дядько Степан та тітка Ліда'},
-      'aminbq5b': {greeting: 'Дорогі', names: 'хресний Віктор та ваша сімʼя'},
-      'o5pd7epb': {greeting: 'Дорогі', names: 'Дмитро та Леся, Діана, Сергій та Нікіта'},
-      'vh3f18z6': {greeting: 'Дорогі', names: 'Марʼяна, Юра та ваші діти'},
-      '509c0j22': {greeting: 'Дорогі', names: 'Світлана та Захар'},
-      'ck8yhrcr': {greeting: 'Дорогі', names: 'Олеся та Даринка'},
-      '94dkm306': {greeting: 'Дорогі', names: 'Божена, Андрій та Олексійко'},
-      'lnckodos': {greeting: 'Дорогий', names: 'Ярослав'}, // Ціолковський Ярослав
-      'ol75j8vx': {greeting: 'Дорогий', names: 'Ярослав'}, // Печеніський Ярослав
-    };
 
-    // --- ОСНОВНА ЛОГІКА САЙТУ ---
+    function b64DecodeUnicode(str) {
+      return decodeURIComponent(atob(str).split('').map(function (c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+    }
+
+    const encodedGuestList = 'eyJocXVyaXAzZiI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0YLQsNGC0L4g0JLQvtC70L7QtNC40LzQuNGAINGC0LAg0LzQsNC80LAg0JvRjtCx0LAiLCJwcm9uIjoi0JLQsNGBIn0sIjNxeWc3c3IwIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9GWIiwibmFtZXMiOiLQktC+0LvQvtC00LjQvNC40YAg0YLQsCDQnNCw0YDRltGPLCDQlNCw0L3QuNC70LrQviwg0J7QutGB0LDQvdC60LAg0YLQsCDQodC+0YTRltC50LrQsCIsInByb24iOiLQktCw0YEifSwiYXp1Y3VhdTAiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0ZYiLCJuYW1lcyI6ItCG0LPQvtGAINGC0LAg0KXRgNC40YHRgtC40L3QsCwg0J7Qu9C10LbQuNC6INGC0LAg0JTQsNGA0LjQvdC60LAiLCJwcm9uIjoi0JLQsNGBIn0sIjl5cmt6cDJkIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9GWIiwibmFtZXMiOiLQotCw0YDQsNGBINGC0LAg0K/RgNC40L3QsCIsInByb24iOiLQktCw0YEifSwiMHNtcnA4MWoiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0ZYiLCJuYW1lcyI6ItCe0LvQtdC60YHRltC5INGC0LAg0J3QsNGC0LDQu9GPIiwicHJvbiI6ItCS0LDRgSJ9LCIxMzNmazluMCI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0LTRgNGD0LbQsdC4INCG0LPQvtGAINGC0LAg0J3QsNGC0LDQu9GPIiwicHJvbiI6ItCS0LDRgSJ9LCJzdGZ4bXExMyI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPQuNC5IiwibmFtZXMiOiLQntGB0YLQsNC/IiwicHJvbiI6ItGC0LXQsdC1In0sIjg5dGRzOWp1Ijp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9C40LkiLCJuYW1lcyI6ItCU0LDQvdC40LvQviIsInByb24iOiLRgtC10LHQtSJ9LCJwcHF6dTBjNyI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0K7RgNGW0Lkg0YLQsCDQotC10YLRj9C90LAsINCQ0YDRgtC10Lwg0YLQsCDQnNC40YXQsNC50LvQviIsInByb24iOiLQktCw0YEifSwiYWFwajN5Ym0iOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0ZYiLCJuYW1lcyI6ItGF0YDQtdGB0L3QuNC5INCc0LjRhdCw0LnQu9C+INGC0LAg0YLRltGC0LrQsCDQntC60YHQsNC90LAiLCJwcm9uIjoi0JLQsNGBIn0sInlhMGNodzJnIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9GWIiwibmFtZXMiOiLQktGW0LrRgtC+0YDRltGPLCDQlNGW0LDQvdC60LAg0YLQsCDQlNC10LzKvNGP0L3QutC+IiwicHJvbiI6ItCS0LDRgSJ9LCJnMm4zeTdlcyI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0KLQtdGC0Y/QvdCwLCDQhtCz0L7RgCDRgtCwINCU0LDQstC40LTQuNC6IiwicHJvbiI6ItCS0LDRgSJ9LCJ3Y296MGszMiI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0IbQs9C+0YAg0YLQsCDQktGW0LrRgtC+0YDRltGPIiwicHJvbiI6ItCS0LDRgSJ9LCIzZXM4eHE2NSI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPQuNC5IiwibmFtZXMiOiLQtNGA0YPQttCx0LAgLSDQkdC+0LPQtNCw0L0iLCJwcm9uIjoi0YLQtdCx0LUifSwiY3Jld3d5bzAiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0ZYiLCJuYW1lcyI6ItCS0L7Qu9C+0LTQuNC80LjRgCDRgtCwINCX0L7RgNGP0L3QsCwg0KHQvtGE0ZbRjyDRgtCwINCc0LDRgNC60L4iLCJwcm9uIjoi0JLQsNGBIn0sIjBiM2d5cDdwIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9GWIiwibmFtZXMiOiLRgtGW0YLQutCwINCT0LDQvdGPLCDQtNGP0LTRjNC60L4g0J7Qu9C10LMg0YLQsCDQnNCw0YDQutGW0Y/QvSIsInByb24iOiLQktCw0YEifSwiNW1ldzQ2enAiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0ZYiLCJuYW1lcyI6ItGC0ZbRgtC60LAg0J7Qu9GPLCDQtNGP0LTRjNC60L4g0IbQstCw0L0g0YLQsCDQktGW0YLQsNC70ZbQuiIsInByb24iOiLQktCw0YEifSwidHkzdGhtbjkiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0LAiLCJuYW1lcyI6ItCS0LDRgdC40LvQuNC90LAiLCJwcm9uIjoi0YLQtdCx0LUifSwicGVieXVwaDMiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0LAiLCJuYW1lcyI6ItCu0LvRjyIsInByb24iOiLRgtC10LHQtSJ9LCJwcGNseHI5eCI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0LzQsNC80LAg0JPQsNC70LjQvdCwINGC0LAg0YLQsNGC0L4g0IbQs9C+0YAiLCJwcm9uIjoi0JLQsNGBIn0sImg3cmN2amVyIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9CwIiwibmFtZXMiOiLQsdCw0LHRg9GB0Y4g0JzQsNGA0ZbRlCIsInByb24iOiLQktCw0YEifSwidGwxYnRtMmQiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0LAiLCJuYW1lcyI6ItCh0L7RhNGW0LnQutCwIiwicHJvbiI6ItGC0LXQsdC1In0sImVkY3Fvd3Z2Ijp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9GWIiwibmFtZXMiOiLQktGW0YLQsNC70ZbQuiwg0KHQvtC70L7QvNGW0LnQutCwINGC0LAg0JvQtdCy0YfQuNC6IiwicHJvbiI6ItCS0LDRgSJ9LCJzbmo0eDYxZSI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0JPQsNC70LjQvdCwLCDQrtGA0ZbQuSwg0JDQu9GW0L3QsCDRgtCwINCf0LDQstC70LjQuiIsInByb24iOiLQktCw0YEifSwiMjZ6c2x3dG0iOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0ZYiLCJuYW1lcyI6ItCe0LvQtdCzINGC0LAg0JPQsNC70Y8iLCJwcm9uIjoi0JLQsNGBIn0sInl4NW02emk5Ijp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9CwIiwibmFtZXMiOiLQtNGA0YPQttC60LAgLSDQlNGW0LDQvdC60LAiLCJwcm9uIjoi0YLQtdCx0LUifSwiNng2NXdia3oiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0LAiLCJuYW1lcyI6ItCQ0L3QsNGB0YLQsNGB0ZbRjyIsInByb24iOiLRgtC10LHQtSJ9LCJnNzg5ZzY3MiI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0YXRgNC10YHQvdCwINCe0LvQtdGB0Y8g0YLQsCDQodC+0YTRltC50LrQsCIsInByb24iOiLQktCw0YEifSwidnM0eXQxdzMiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0LjQuSIsIm5hbWVzIjoi0J7Qu9C10LrRgdCw0L3QtNGAIiwicHJvbiI6ItCS0LDRgSJ9LCJxNzNzb2Z4MiI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0IbQstCw0L3QutCwLCDQotCw0YDQsNGBINGC0LAg0J7QutGB0LDQvdC60LAiLCJwcm9uIjoi0JLQsNGBIn0sInFmMm95eGFzIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9GWIiwibmFtZXMiOiLQodCy0Y/RgtC+0YHQu9Cw0LIg0YLQsCDQrtC70Y8iLCJwcm9uIjoi0JLQsNGBIn0sImJ0dGs2cGlzIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9C40LkiLCJuYW1lcyI6ItCS0ZbQutGC0L7RgCIsInByb24iOiLRgtC10LHQtSJ9LCJld2dlbW03ZCI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPQuNC5IiwibmFtZXMiOiLQoNC+0LzQsNC9IiwicHJvbiI6ItGC0LXQsdC1In0sImJibHlsbXA0Ijp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9C40LkiLCJuYW1lcyI6ItCc0LDQutGB0LjQvCIsInByb24iOiLRgtC10LHQtSJ9LCI5ZHZvaGtzNyI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0KXRgNC40YHRgtGPLCDQkNC90LDRgdGC0LDRgdGW0LnQutCwINGC0LAg0JLRltC60YPRgdGPIiwicHJvbiI6ItCS0LDRgSJ9LCJsMzgxYmxvNCI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPQsCIsIm5hbWVzIjoi0KXRgNC40YHRgtC40L3QsCIsInByb24iOiLRgtC10LHQtSJ9LCJqaW45eDZ1YiI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0LTRj9C00YzQutC+INCh0YLQtdC/0LDQvSDRgtCwINGC0ZbRgtC60LAg0JvRltC00LAiLCJwcm9uIjoi0JLQsNGBIn0sImFtaW5icTViIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9GWIiwibmFtZXMiOiLRhdGA0LXRgdC90LjQuSDQktGW0LrRgtC+0YAg0YLQsCDQstCw0YjQsCDRgdGW0LzKvNGPIiwicHJvbiI6ItCS0LDRgSJ9LCJvNXBkN2VwYiI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0JTQvNC40YLRgNC+INGC0LAg0JvQtdGB0Y8sINCU0ZbQsNC90LAsINCh0LXRgNCz0ZbQuSDRgtCwINCd0ZbQutGW0YLQsCIsInByb24iOiLQktCw0YEifSwidmgzZjE4ejYiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0ZYiLCJuYW1lcyI6ItCc0LDRgMq80Y/QvdCwLCDQrtGA0LAg0YLQsCDQstCw0YjRliDQtNGW0YLQuCIsInByb24iOiLQktCw0YEifSwiNTA5YzBqMjIiOnsiZ3JlZXRpbmciOiLQlNC+0YDQvtCz0ZYiLCJuYW1lcyI6ItCh0LLRltGC0LvQsNC90LAg0YLQsCDQl9Cw0YXQsNGAIiwicHJvbiI6ItCS0LDRgSJ9LCJjazh5aHJjciI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0J7Qu9C10YHRjyDRgtCwINCU0LDRgNC40L3QutCwIiwicHJvbiI6ItCS0LDRgSJ9LCI5NGRrbTMwNiI6eyJncmVldGluZyI6ItCU0L7RgNC+0LPRliIsIm5hbWVzIjoi0JHQvtC20LXQvdCwLCDQkNC90LTRgNGW0Lkg0YLQsCDQntC70LXQutGB0ZbQudC60L4iLCJwcm9uIjoi0JLQsNGBIn0sImxuY2tvZG9zIjp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9C40LkiLCJuYW1lcyI6ItCv0YDQvtGB0LvQsNCyIiwicHJvbiI6ItGC0LXQsdC1In0sIm9sNzVqOHZ4Ijp7ImdyZWV0aW5nIjoi0JTQvtGA0L7Qs9C40LkiLCJuYW1lcyI6ItCv0YDQvtGB0LvQsNCyIiwicHJvbiI6ItGC0LXQsdC1In19';
+    const guestList = JSON.parse(b64DecodeUnicode(encodedGuestList));
+
     const urlParams = new URLSearchParams(window.location.search);
     const guestId = urlParams.get('id');
     const guestData = guestId ? guestList[guestId] : null;
 
     if (guestData) {
-      // Якщо гість знайдений - показуємо сайт
       document.getElementById('website-content').style.visibility = 'visible';
 
-      // 1. Встановлюємо персональне привітання
       const greetingElement = document.getElementById('guest-greeting');
       if (greetingElement) {
-        greetingElement.innerHTML = `${guestData.greeting} <span class="guest-names">${guestData.names}</span>,<br>запрошуємо вас святкувати з нами`;
+        greetingElement.innerHTML = `${guestData.greeting} <span class="guest-names">${guestData.names}</span>,<br>запрошуємо ${guestData.pron} святкувати з нами`;
       }
 
-      // 2. Запускаємо таймер зворотного відліку
       const weddingDate = new Date("August 16, 2025 12:40:00").getTime();
       const countdownFunction = setInterval(function () {
         const now = new Date().getTime();
@@ -457,13 +412,11 @@
       }, 1000);
 
     } else {
-      // Якщо гість НЕ знайдений - показуємо сторінку-заглушку
       document.getElementById('access-denied').style.display = 'flex';
     }
 
   } catch (e) {
     console.error("An error occurred:", e);
-    // На випадок критичної помилки, показуємо заглушку
     document.getElementById('access-denied').style.display = 'flex';
   }
 </script>

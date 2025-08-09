@@ -246,7 +246,7 @@
         Натомість будемо щиро раді пляшечці вашого улюбленого вина або книжці, яку ви рекомендуєте
         прочитати.
       </p>
-      
+
       <h4>Дрес-код</h4>
       <div class="dress-code-container">
 
@@ -377,9 +377,8 @@
 
 <script>
   try {
-    // getEncoded()
-    
-    
+    getEncoded()
+
     function b64DecodeUnicode(str) {
       return decodeURIComponent(atob(str).split('').map(function (c) {
         return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
@@ -428,6 +427,105 @@
     document.getElementById('access-denied').style.display = 'flex';
   }
 
+  function getEncoded() {
+    // --- СПИСОК ГОСТЕЙ ---
+    const guestList1 = {
+      // Нареченого
+      // Рідні
+      'hqurip3f': {greeting: 'Дорогі', names: 'тато Володимир та мама Люба', pron: 'Вас'},
+      '3qyg7sr0': {greeting: 'Дорогі', names: 'Володимир та Марія, Данилко, Оксанка та Софійка', pron: 'Вас'},
+      'azucuau0': {greeting: 'Дорогі', names: 'Ігор та Христина, Олежик та Даринка', pron: 'Вас'},
+      
+      // Друзі
+      '9yrkzp2d': {greeting: 'Дорогі', names: 'Тарас та Ярина', pron: 'Вас'},
+      '0smrp81j': {greeting: 'Дорогі', names: 'Олексій та Наталя', pron: 'Вас'},
+      '133fk9n0': {greeting: 'Дорогі', names: 'дружби Ігор та Наталя', pron: 'Вас'},
+      'stfxmq13': {greeting: 'Дорогий', names: 'Остап', pron: 'тебе'},
+      '89tds9ju': {greeting: 'Дорогий', names: 'Данило', pron: 'тебе'},
+      'ya0chw2g': {greeting: 'Дорогі', names: 'Вікторія, Діанка та Демʼянко', pron: 'Вас'},
+      '3es8xq65': {greeting: 'Дорогий', names: 'дружба - Богдан', pron: 'тебе'},
+      'ppqzu0c7': {greeting: 'Дорогі', names: 'Юрій та Тетяна, Артем та Михайло', pron: 'Вас'},
+      
+      // Хресний
+      'aapj3ybm': {greeting: 'Дорогі', names: 'хресний Михайло та тітка Оксана', pron: 'Вас'},
+      
+      // Родина тата
+      'g2n3y7es': {greeting: 'Дорогі', names: 'Тетяна, Ігор та Давидик', pron: 'Вас'},
+      'crewwyo0': {greeting: 'Дорогі', names: 'Володимир та Зоряна, Софія та Марко', pron: 'Вас'},
+      '0b3gyp7p': {greeting: 'Дорогі', names: 'тітка Ганя, дядько Олег та Маркіян', pron: 'Вас'},
+      '5mew46zp': {greeting: 'Дорогі', names: 'тітка Оля, дядько Іван та Віталік', pron: 'Вас'},
+      "5ksn0lkv": {greeting: "Дорогі", names: "Олександра, Ілля та Лука", pron: "Вас"},
+      
+      // Родина мами
+      'wcoz0k32': {greeting: 'Дорогі', names: 'Ігор та Вікторія', pron: 'Вас'},
+      "ildyes1u": {greeting: "Дорогий", names: "Іван", pron: "тебе"},
+      "cht64deb": {greeting: "Дорогі", names: "Василь та Іванка, Євген та Сашко", pron: "Вас"},
+      "iubpa152": {greeting: "Дорогі", names: "Юрій та Галина, Юрчик та {{уточнити}}", pron: "Вас"},
+      
+      // Друзі з Кракова
+      'ty3thmn9': {greeting: 'Дорогі', names: 'Володимир, Василина та Максимчик', pron: 'Вас'},
+      'pebyuph3': {greeting: 'Дорогі', names: 'Ярослав та Юля', pron: 'Вас'},
+      'pebyuph1': {greeting: 'Дорогий', names: 'Ярослав aka Ярославчик aka Славік', pron: 'тебе'},
+      
+      // Друзі сімʼї
+      'vsdrqlmy': {greeting: 'Дорогий', names: 'Пан Олег та ваша сімʼя', pron: 'Вас'},
+      
+      // Одногрупники
+      'yt6m79hm': {greeting: 'Дорогий', names: 'Орест', pron: 'тебе'},
+      '3wkgqs5m': {greeting: 'Дорогий', names: 'Артем та Марія', pron: 'Вас'},
+      's1brrfxt': {greeting: 'Дорогий', names: 'Валерій та {{уточнити}}', pron: 'Вас'},
+      'bjztwz8r': {greeting: 'Дорогий', names: 'Ростислав та {{уточнити}}', pron: 'Вас'},
+      
+
+      // Нареченої
+      'ppclxr9x': {greeting: 'Дорогі', names: 'мама Галина та тато Ігор', pron: 'Вас'},
+      'h7rcvjer': {greeting: 'Дорога', names: 'бабусю Маріє', pron: 'Вас'},
+      'tl1btm2d': {greeting: 'Дорога', names: 'Софійка', pron: 'тебе'},
+      'edcqowvv': {greeting: 'Дорогі', names: 'Віталік, Соломійка та Левчик', pron: 'Вас'},
+      'snj4x61e': {greeting: 'Дорогі', names: 'Галина, Юрій, Аліна та Павлик', pron: 'Вас'},
+      '26zslwtm': {greeting: 'Дорогі', names: 'Олег та Галя', pron: 'Вас'},
+      'yx5m6zi9': {greeting: 'Дорога', names: 'дружка - Діанка', pron: 'тебе'},
+      '6x65wbkz': {greeting: 'Дорога', names: 'Анастасія', pron: 'тебе'},
+      'g789g672': {greeting: 'Дорогі', names: 'хресна Олеся та Софійка', pron: 'Вас'},
+      'vs4yt1w3': {greeting: 'Дорогий', names: 'Олександр', pron: 'Вас'},
+      'q73sofx2': {greeting: 'Дорогі', names: 'Іванка, Тарас та Оксанка', pron: 'Вас'},
+      'qf2oyxas': {greeting: 'Дорогі', names: 'Святослав та Юля', pron: 'Вас'},
+      'bttk6pis': {greeting: 'Дорогий', names: 'Віктор', pron: 'тебе'},
+      'ewgemm7d': {greeting: 'Дорогий', names: 'Роман', pron: 'тебе'},
+      'bblylmp4': {greeting: 'Дорогий', names: 'Максим', pron: 'тебе'},
+      '9dvohks7': {greeting: 'Дорогі', names: 'Христя та Йосип, Анастасійка та Вікуся', pron: 'Вас'},
+      'l381blo4': {greeting: 'Дорога', names: 'Христина', pron: 'тебе'},
+      'jin9x6ub': {greeting: 'Дорогі', names: 'дядько Степан та тітка Ліда', pron: 'Вас'},
+      'aminbq5b': {greeting: 'Дорогий', names: 'хресний Віктор та ваша сімʼя', pron: 'Вас'},
+      'o5pd7epb': {greeting: 'Дорогі', names: 'Дмитро та Леся, Діана, Сергій та Нікіта', pron: 'Вас'},
+      'vh3f18z6': {greeting: 'Дорогі', names: 'Марʼяна, Юра та ваші діти', pron: 'Вас'},
+      '509c0j22': {greeting: 'Дорогі', names: 'Світлана та Захар', pron: 'Вас'},
+      'ck8yhrcr': {greeting: 'Дорогі', names: 'Олеся та Даринка', pron: 'Вас'},
+      '94dkm306': {greeting: 'Дорогі', names: 'Божена, Андрій та Олексійко', pron: 'Вас'},
+      'lnckodos': {greeting: 'Дорогий', names: 'Ярослав', pron: 'тебе'}, // Ціолковський Ярослав
+      'ol75j8vx': {greeting: 'Дорогий', names: 'Ярослав', pron: 'тебе'}, // Печеніський Ярослав
+      'feglh74c': {greeting: 'Дорогі', names: 'Олеся, Юра та ваші діти', pron: 'Вас'},
+      'tueifnuo': {greeting: 'Дорогі', names: 'Христина та Віталій', pron: 'Вас'},
+      'mffysblq': {greeting: 'Дорогий', names: 'Михайло', pron: 'тебе'},
+      'scxu5uvs': {greeting: 'Дорогі', names: 'Володимир, Христина та Андрійко', pron: 'Вас'},
+      '76ulefk9': {greeting: 'Дорогі', names: 'Андрій, Дана та Данилко', pron: 'Вас'},
+      '76cwwc0q': {greeting: 'Дорогі', names: 'Христина та Богданчик', pron: 'Вас'},
+      '5catbvmo': {greeting: 'Дорогий', names: 'Андріан зі сімʼєю', pron: 'Вас'},
+      'k0m0qajx': {greeting: 'Дорогі', names: 'Юра та Захар', pron: 'Вас'},
+      '32tdvqex': {greeting: 'Дорогі', names: 'Ярина та Діанка', pron: 'Вас'},
+      'wx82cc8k': {greeting: 'Дорогі', names: 'Ігор та Юля, Ян та Матвій', pron: 'Вас'},
+      'zkwzmzti': {greeting: 'Дорогі', names: 'Ірина та Остап', pron: 'Вас'},
+    };
+
+    function b64EncodeUnicode(str) {
+      return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
+          function toSolidBytes(match, p1) {
+            return String.fromCharCode('0x' + p1);
+          }));
+    }
+
+    console.log(b64EncodeUnicode(JSON.stringify(guestList1)));
+  }
 
 
 </script>
